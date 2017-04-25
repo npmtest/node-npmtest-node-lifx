@@ -1,6 +1,6 @@
 # npmtest-node-lifx
 
-#### test coverage for  [node-lifx (v0.8.0)](https://github.com/MariusRumpf/node-lifx#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-node-lifx.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-node-lifx) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-node-lifx.svg)](https://travis-ci.org/npmtest/node-npmtest-node-lifx)
+#### basic test coverage for  [node-lifx (v0.8.0)](https://github.com/MariusRumpf/node-lifx#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-node-lifx.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-node-lifx) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-node-lifx.svg)](https://travis-ci.org/npmtest/node-npmtest-node-lifx)
 
 #### Node.js implementation of the LIFX protocol
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-node-lifx/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-node-lifx/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-node-lifx/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-node-lifx/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-node-lifx/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-node-lifx/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-node-lifx/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-node-lifx/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-node-lifx/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-node-lifx/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-node-lifx/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-node-lifx/build/coverage.html/index.html)
 
@@ -92,7 +92,8 @@
         "report-coverage": "cat ./coverage/coverage.json | node_modules/codecov.io/bin/codecov.io.js",
         "test": "istanbul cover -root lib/ node_modules/mocha/bin/_mocha -- -u tdd -r babelhook --recursive test/unit/"
     },
-    "version": "0.8.0"
+    "version": "0.8.0",
+    "bin": {}
 }
 ```
 
